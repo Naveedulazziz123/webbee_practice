@@ -41,7 +41,7 @@ class RotaMetaSeeder extends Seeder
                 'date' => '2022-09-28',
                 'start_time' => '08:00:00',
                 'end_time' => '20:00:00',
-                'active' => 1,
+                'active' => 0,
                 'slug' => 'holiday',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()

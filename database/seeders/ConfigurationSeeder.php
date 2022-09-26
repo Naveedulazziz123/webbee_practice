@@ -29,6 +29,13 @@ class ConfigurationSeeder extends Seeder
                 'slug' => 'buffer_time',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
+            ],
+            [
+                'name' => 'slot',
+                'data' => '10',
+                'slug' => 'slot_mint',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
             ]
         ]);
     }
