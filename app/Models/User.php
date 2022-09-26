@@ -19,12 +19,12 @@ class User extends Authenticatable
 
     public function shop()
     {
-        return $this->belongsTo(Shop::class, 'shope_id');
+        return $this->belongsTo(Shop::class, 'shop_id');
     }
 
     public function appointment()
     {
-        return $this->belongsTo(Appointment::class, 'user_id');
+        return $this->hasMany(Appointment::class, 'user_id');
     }
 
 }

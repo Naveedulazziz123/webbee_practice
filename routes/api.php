@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers\Api\ScheduledDetails;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('appointments',\App\Http\Controllers\Api\AppointmentController::class);
+
+Route::get('/schedule/details/{start_date?}/{end_date?}', ScheduledDetails::class);
