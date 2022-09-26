@@ -21,4 +21,22 @@ class Shop extends Model
         return $this->belongsTo(Appointment::class, 'user_id');
     }
 
+    public function rota_meta()
+    {
+        return $this->hasManyThrough(Rota_Meta::class, Rota::class, 'shop_id', 'rota_id');
+    }
+
+
+    public function breaks(){
+        return $this->hasMany(Breaks::class);
+    }
+
+    public function rota(){
+        return $this->hasOne(Rota::class);
+    }
+
+
+
+
+
 }
