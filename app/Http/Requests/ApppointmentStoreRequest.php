@@ -28,7 +28,8 @@ class ApppointmentStoreRequest extends FormRequest
             'schedule_start_time' => 'required',
             'schedule_end_time' => 'required',
             'user_id' => 'required',
-            'shop_id' => 'required'
+            'shop_id' => 'required',
+            'service_id' => 'required',
         ];
     }
 }
